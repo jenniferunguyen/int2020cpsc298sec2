@@ -1,14 +1,22 @@
+/*Jennifer Nguyen
+2320560
+jenguyen@chapman.edu
+CPSC 298-01 German
+Assignment 1 - fire capacity*/
+
 #include <iostream>
 using namespace std;
 
 int main(int argc, char **argv){
-    
+
     int capacity;
     int attendance;
     bool legal;
     int openSpace;
 
+    cout << "Room capacity: ";
     cin >> capacity;
+    cout << "Number of people for meeting: ";
     cin >> attendance;
 
     cout << "Based on fire regulations, ";

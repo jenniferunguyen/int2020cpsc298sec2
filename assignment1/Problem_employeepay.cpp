@@ -1,8 +1,14 @@
+/*Jennifer Nguyen
+2320560
+jenguyen@chapman.edu
+CPSC 298-01 German
+Assignment 1 - employee pay*/
+
 #include <iostream>
 using namespace std;
 
 int main(int argc, char **argv){
-    
+
     const float PAY_RATE = 16.00;
     const float SOCIAL_SECURITY_RATE = 0.06;
     const float FEDERAL_TAX_RATE = 0.14;
@@ -10,6 +16,7 @@ int main(int argc, char **argv){
     const int INSURANCE_FEE = 10;
 
     float hoursWorked;
+    cout << "Hours worked in week: ";
     cin >> hoursWorked;
 
     float grossPay =  PAY_RATE * hoursWorked;
@@ -19,12 +26,12 @@ int main(int argc, char **argv){
     float socialSecurityTax = grossPay * SOCIAL_SECURITY_RATE;
     float federalIncomeTax = grossPay * FEDERAL_TAX_RATE;
     float stateIncomeTax = grossPay * STATE_TAX_RATE;
-    cout << "Gross pay: $" << grossPay << endl
-         << "Social security withholding: $" << socialSecurityTax << endl
+    cout << "Gross pay:                      $" << grossPay << endl
+         << "Social security withholding:    $" << socialSecurityTax << endl
          << "Federal income tax withholding: $" << federalIncomeTax << endl
-         << "State income tax withholding: $" << stateIncomeTax << endl
-         << "Medical insurance withholding: $" << INSURANCE_FEE << endl
-         << "Net take-home pay: $" << grossPay - socialSecurityTax - federalIncomeTax - stateIncomeTax - INSURANCE_FEE << endl;
+         << "State income tax withholding:   $" << stateIncomeTax << endl
+         << "Medical insurance withholding:  $" << INSURANCE_FEE << endl
+         << "Net take-home pay:              $" << grossPay - socialSecurityTax - federalIncomeTax - stateIncomeTax - INSURANCE_FEE << endl;
 
     return 0;
 }
