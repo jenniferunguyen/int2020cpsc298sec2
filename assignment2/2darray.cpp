@@ -1,3 +1,9 @@
+/*Jennifer Nguyen
+2320560
+jenguyen@chapman.edu
+CPSC 298-01 German
+Assignment 2 - 2d array*/
+
 #include <iostream>
 using namespace std;
 
