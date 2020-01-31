@@ -20,6 +20,7 @@ int main(int argc, char **argv){
             numberArray[i] = userInput;
         }
     }
+    
     cout << "Your numbers: ";
     for(int i = 0; i < 10; ++i){
         if(numberArray[i] < 0){

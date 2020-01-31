@@ -8,6 +8,7 @@ Assignment 2 - 2d array*/
 using namespace std;
 
 int main(int argc, char **argv){
+    
     int a[4][5];
 
     int column = 0;

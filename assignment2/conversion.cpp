@@ -8,11 +8,12 @@ Assignment 2 - conversion*/
 #include <string>
 using namespace std;
 
+//output function
 void PrintMeters(int meters, int centimeters){
     cout << meters << " m and " << centimeters << " cm" << endl;
 }
 
-//0.3048 m = 1 ft, 100 cm = 1 m, 12 in = 1 ft
+//conversion function
 void ConvertToMeters(int feet, int inches, int &meters, int &centimeters){
     int totalInches = (12 * feet) + inches;
     centimeters = totalInches * 2.54;
@@ -20,6 +21,7 @@ void ConvertToMeters(int feet, int inches, int &meters, int &centimeters){
     centimeters = centimeters - (meters * 100);
 }
 
+//input function
 void AskForLength(){
     while(true){
         cout << "Enter length in feet and inches, separated by space: ";
