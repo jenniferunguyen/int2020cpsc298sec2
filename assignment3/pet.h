@@ -1,11 +1,17 @@
+/*Jennifer Nguyen
+2320560
+jenguyen@chapman.edu
+CPSC 298-01 German
+Assignment 3*/
+
 #include <iostream>
 #include <string>
 using namespace std;
 
 class Pet{
     public:
-        Pet::Pet();
-        Pet::Pet(string name = "NoName", int age = "0", string type = "pet", double weight = "0");
+        Pet();
+        Pet(string name, int age, string type, double weight);
         void SetName(string name);
         void SetAge(int age);
         void SetType(string type);
@@ -13,17 +19,11 @@ class Pet{
         string GetName();
         int GetAge();
         string GetType();
-        douoble GetWeight();
+        double GetWeight();
         void PrintInfo();
     private:
         string m_name;
         int m_age;
-        string m_type; //dog, cat
+        string m_type;
         double m_weight;
 };
-
-
-
-
-accessors
-mutators
